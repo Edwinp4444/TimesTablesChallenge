@@ -12,7 +12,7 @@ public class TTC {
 		int low;
 		int num;
 		int score=0;
-
+		int correct=0;
 		//Ask for hi, low and number
 		System.out.println("Welcome to the Times Table Challenge!");
 		System.out.println("What is the biggest number you want?");
@@ -33,10 +33,14 @@ public class TTC {
 			int ans=in.nextInt();
 			if (ans==num1*num2) {
 				score++;
-
+				correct++;
 				System.out.println("Right!");
 
-			} else System.out.println("Wrong! the answer "+(num1*num2));
+			} else {
+				System.out.println("Wrong! the answer "+(num1*num2));
+				correct=0;
+			}
+			
 
 
 		}
