@@ -24,7 +24,7 @@ public class TTC {
 		//Loop and ask questions
 		int x=1;
 		while (x<=10) {
-			//rnd.nestInt(range)+lowest
+		 //rnd.nestInt(range)+lowest
 			System.out.println(x);
 			x++;
 			int num1=rnd.nextInt(hi-low+1)+low;
